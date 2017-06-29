@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="PhoneAlbumTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E5E-RO-HT7">
+                        <rect key="frame" x="10" y="13" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="8F7-Jq-S2V"/>
+                            <constraint firstAttribute="height" constant="70" id="iLq-oR-C9j"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相机胶卷" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drl-h9-fV0">
+                        <rect key="frame" x="95" y="40" width="341" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="sIP-5N-JzG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E5E-RO-HT7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1Rd-jo-GCH"/>
+                    <constraint firstItem="Drl-h9-fV0" firstAttribute="leading" secondItem="E5E-RO-HT7" secondAttribute="trailing" constant="15" id="5Ce-A9-pxG"/>
+                    <constraint firstItem="E5E-RO-HT7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Fd4-Lr-lYW"/>
+                    <constraint firstItem="Drl-h9-fV0" firstAttribute="centerY" secondItem="E5E-RO-HT7" secondAttribute="centerY" constant="1.5" id="xiv-WS-TpM"/>
+                    <constraint firstAttribute="trailing" secondItem="Drl-h9-fV0" secondAttribute="trailing" id="zdS-DC-RCn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="m_imageView" destination="E5E-RO-HT7" id="S4Y-jm-Kcw"/>
+                <outlet property="m_titleLab" destination="Drl-h9-fV0" id="7Cr-PX-c3G"/>
+            </connections>
+            <point key="canvasLocation" x="389" y="376"/>
+        </tableViewCell>
+    </objects>
+</document>

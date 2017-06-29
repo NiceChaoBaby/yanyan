@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MovieCollectionViewCell" reuseIdentifier="MovieCollectionViewCell" id="Bsd-7f-Lkk" customClass="MovieCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="204"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="204"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrJ-t0-QWJ">
+                        <rect key="frame" x="0.0" y="0.0" width="224" height="204"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gpz-Qd-Bx7">
+                                <rect key="frame" x="0.0" y="0.0" width="224" height="204"/>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzm-UE-rHE">
+                                <rect key="frame" x="0.0" y="189" width="224" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="VAh-Mx-9vp"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCx-3N-xDU">
+                                <rect key="frame" x="194.5" y="192" width="26.5" height="9"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="9" id="rDs-l6-03c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gpz-Qd-Bx7" secondAttribute="trailing" id="03u-g6-rrm"/>
+                            <constraint firstAttribute="bottom" secondItem="wCx-3N-xDU" secondAttribute="bottom" constant="3" id="5JN-Lm-yfF"/>
+                            <constraint firstItem="gpz-Qd-Bx7" firstAttribute="leading" secondItem="UrJ-t0-QWJ" secondAttribute="leading" id="8uG-d6-TEF"/>
+                            <constraint firstAttribute="bottom" secondItem="gpz-Qd-Bx7" secondAttribute="bottom" id="I6q-uH-DYQ"/>
+                            <constraint firstItem="Vzm-UE-rHE" firstAttribute="leading" secondItem="UrJ-t0-QWJ" secondAttribute="leading" id="S6V-X3-KKO"/>
+                            <constraint firstAttribute="trailing" secondItem="wCx-3N-xDU" secondAttribute="trailing" constant="3" id="dw0-0a-rjw"/>
+                            <constraint firstAttribute="bottom" secondItem="Vzm-UE-rHE" secondAttribute="bottom" id="pkA-zz-tTp"/>
+                            <constraint firstItem="gpz-Qd-Bx7" firstAttribute="top" secondItem="UrJ-t0-QWJ" secondAttribute="top" id="qcn-uY-neO"/>
+                            <constraint firstAttribute="trailing" secondItem="Vzm-UE-rHE" secondAttribute="trailing" id="wO9-GQ-ja4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UrJ-t0-QWJ" secondAttribute="trailing" id="GSr-bF-aI6"/>
+                <constraint firstItem="UrJ-t0-QWJ" firstAttribute="top" secondItem="Bsd-7f-Lkk" secondAttribute="top" id="JrQ-0b-NRY"/>
+                <constraint firstAttribute="bottom" secondItem="UrJ-t0-QWJ" secondAttribute="bottom" id="Ucz-e5-keE"/>
+                <constraint firstItem="UrJ-t0-QWJ" firstAttribute="leading" secondItem="Bsd-7f-Lkk" secondAttribute="leading" id="gJS-zy-nl4"/>
+            </constraints>
+            <size key="customSize" width="224" height="204"/>
+            <connections>
+                <outlet property="m_view" destination="Vzm-UE-rHE" id="f9u-j7-Es6"/>
+                <outlet property="moviePhoto" destination="gpz-Qd-Bx7" id="HhD-3K-lIg"/>
+                <outlet property="time" destination="wCx-3N-xDU" id="9tv-nq-Y5R"/>
+            </connections>
+            <point key="canvasLocation" x="191" y="299"/>
+        </collectionViewCell>
+    </objects>
+</document>

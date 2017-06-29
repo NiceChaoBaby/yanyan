@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="promptView" id="iN0-l3-epB" customClass="promptView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nn-HR-K5M">
+                    <rect key="frame" x="0.0" y="21" width="375" height="22"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="7" maxY="0.0"/>
+                    <state key="normal" title="今日奖励" image="ok">
+                        <color key="titleColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经验: +5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIs-7X-8aE">
+                    <rect key="frame" x="168.5" y="69" width="57.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPy-OF-NhZ">
+                    <rect key="frame" x="168.5" y="104" width="37.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="QIs-7X-8aE" firstAttribute="top" secondItem="9nn-HR-K5M" secondAttribute="bottom" constant="26" id="FUb-7t-PNR"/>
+                <constraint firstItem="NPy-OF-NhZ" firstAttribute="leading" secondItem="QIs-7X-8aE" secondAttribute="leading" id="IRF-kK-B1X"/>
+                <constraint firstAttribute="trailing" secondItem="9nn-HR-K5M" secondAttribute="trailing" id="PKY-5C-1gd"/>
+                <constraint firstItem="NPy-OF-NhZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Qt8-Si-hqc"/>
+                <constraint firstItem="9nn-HR-K5M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="21" id="UBg-Tc-mlu"/>
+                <constraint firstItem="9nn-HR-K5M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VPJ-7h-jeZ"/>
+                <constraint firstItem="NPy-OF-NhZ" firstAttribute="top" secondItem="QIs-7X-8aE" secondAttribute="bottom" constant="17" id="i3g-Pv-KQe"/>
+            </constraints>
+            <connections>
+                <outlet property="m_addNumber" destination="QIs-7X-8aE" id="ru8-mY-8hW"/>
+                <outlet property="m_integralNumber" destination="NPy-OF-NhZ" id="iq3-yP-irj"/>
+            </connections>
+            <point key="canvasLocation" x="-15.5" y="-374.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ok" width="20" height="20"/>
+    </resources>
+</document>

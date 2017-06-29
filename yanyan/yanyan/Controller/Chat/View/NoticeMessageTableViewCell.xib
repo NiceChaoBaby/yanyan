@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoticeMessageTableViewCell" rowHeight="70" id="KGk-i7-Jjw" customClass="NoticeMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41N-EX-A4k">
+                        <rect key="frame" x="123" y="20" width="80" height="29.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="555" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jyjyjyj范德萨发水电费水电费是否规定个梵蒂冈" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxQ-OV-lvO">
+                                <rect key="frame" x="10" y="0.0" width="60" height="29.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WxQ-OV-lvO" firstAttribute="top" secondItem="41N-EX-A4k" secondAttribute="top" id="10D-qr-o6a"/>
+                            <constraint firstAttribute="trailing" secondItem="WxQ-OV-lvO" secondAttribute="trailing" constant="10" id="5MB-Hc-0vV"/>
+                            <constraint firstAttribute="width" constant="80" id="SCX-8g-nYY"/>
+                            <constraint firstAttribute="bottom" secondItem="WxQ-OV-lvO" secondAttribute="bottom" id="ajO-Lj-G7M"/>
+                            <constraint firstItem="WxQ-OV-lvO" firstAttribute="leading" secondItem="41N-EX-A4k" secondAttribute="leading" constant="10" id="bFh-f9-2ab"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="41N-EX-A4k" secondAttribute="bottom" constant="20" id="4b9-kH-elj"/>
+                    <constraint firstItem="41N-EX-A4k" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="O8w-xU-dbk"/>
+                    <constraint firstItem="41N-EX-A4k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="dqz-VH-22I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="m_bgView" destination="41N-EX-A4k" id="yzP-5c-wqU"/>
+                <outlet property="m_labWidthConstraint" destination="SCX-8g-nYY" id="LDx-tT-kGF"/>
+                <outlet property="m_titleLab" destination="WxQ-OV-lvO" id="ITW-Bx-FRa"/>
+            </connections>
+            <point key="canvasLocation" x="201" y="273"/>
+        </tableViewCell>
+    </objects>
+</document>

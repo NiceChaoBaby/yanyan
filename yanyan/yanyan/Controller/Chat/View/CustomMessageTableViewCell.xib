@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomMessageTableViewCell" rowHeight="122" id="KGk-i7-Jjw" customClass="CustomMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jF-Be-xvR">
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47B-S0-p5p">
+                                <color key="backgroundColor" red="0.33725490196078434" green="0.6705882352941176" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="拒绝"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickDisagreeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qGl-tV-Iih"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZH-WY-qoy">
+                                <color key="backgroundColor" red="0.33725490200000002" green="0.6705882353" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="KN4-LT-uaO"/>
+                                    <constraint firstAttribute="height" constant="35" id="zyX-fN-WnD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="同意"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickAgreeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="d7E-w6-CSw"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gl-Rb-Yuq">
+                                <color key="backgroundColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="WoD-FZ-UZy"/>
+                                    <constraint firstAttribute="width" constant="65" id="ub0-35-qpp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="已同意"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpQ-p5-pE5">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有人发起对XXX的举报，3人同意将禁言该用户，您是否同意？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTt-hy-x00">
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oTt-hy-x00" secondAttribute="bottom" constant="5" id="UGk-d2-klY"/>
+                                    <constraint firstItem="oTt-hy-x00" firstAttribute="top" secondItem="cpQ-p5-pE5" secondAttribute="top" constant="5" id="YAy-5O-C0y"/>
+                                    <constraint firstAttribute="trailing" secondItem="oTt-hy-x00" secondAttribute="trailing" constant="5" id="f86-MN-4Ut"/>
+                                    <constraint firstItem="oTt-hy-x00" firstAttribute="leading" secondItem="cpQ-p5-pE5" secondAttribute="leading" constant="5" id="hHp-lu-foi"/>
+                                    <constraint firstAttribute="height" constant="60" id="mPD-gW-IMH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4ZH-WY-qoy" firstAttribute="width" secondItem="47B-S0-p5p" secondAttribute="width" id="2zf-3X-fKO"/>
+                            <constraint firstAttribute="trailing" secondItem="cpQ-p5-pE5" secondAttribute="trailing" constant="35" id="30L-Is-xe4"/>
+                            <constraint firstItem="4ZH-WY-qoy" firstAttribute="height" secondItem="47B-S0-p5p" secondAttribute="height" id="53S-tm-ItQ"/>
+                            <constraint firstItem="4ZH-WY-qoy" firstAttribute="leading" secondItem="47B-S0-p5p" secondAttribute="trailing" constant="10" id="9RZ-Ry-xHL"/>
+                            <constraint firstItem="4ZH-WY-qoy" firstAttribute="bottom" secondItem="47B-S0-p5p" secondAttribute="bottom" id="Gzt-nH-eHe"/>
+                            <constraint firstItem="4ZH-WY-qoy" firstAttribute="top" secondItem="cpQ-p5-pE5" secondAttribute="bottom" constant="10" id="NPQ-LO-inH"/>
+                            <constraint firstItem="4ZH-WY-qoy" firstAttribute="trailing" secondItem="cpQ-p5-pE5" secondAttribute="trailing" id="bnH-z1-985"/>
+                            <constraint firstItem="cpQ-p5-pE5" firstAttribute="top" secondItem="9jF-Be-xvR" secondAttribute="top" constant="8" id="iGg-vX-T3l"/>
+                            <constraint firstItem="cpQ-p5-pE5" firstAttribute="leading" secondItem="9jF-Be-xvR" secondAttribute="leading" constant="35" id="od4-vL-9do"/>
+                            <constraint firstItem="8gl-Rb-Yuq" firstAttribute="top" secondItem="cpQ-p5-pE5" secondAttribute="bottom" constant="10" id="rZH-5Q-P8D"/>
+                            <constraint firstItem="8gl-Rb-Yuq" firstAttribute="trailing" secondItem="cpQ-p5-pE5" secondAttribute="trailing" id="xg4-nX-BOC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9jF-Be-xvR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6G6-Jm-YE4"/>
+                    <constraint firstAttribute="trailing" secondItem="9jF-Be-xvR" secondAttribute="trailing" id="FHe-lJ-vSj"/>
+                    <constraint firstAttribute="bottom" secondItem="9jF-Be-xvR" secondAttribute="bottom" id="HXD-KR-Rk9"/>
+                    <constraint firstItem="9jF-Be-xvR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nqP-AF-2rg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentBgConstraintH" destination="mPD-gW-IMH" id="Xs6-s8-N4h"/>
+                <outlet property="m_agreeBtn" destination="4ZH-WY-qoy" id="8Ca-Wg-xOy"/>
+                <outlet property="m_contentLab" destination="oTt-hy-x00" id="6Dv-dp-oOl"/>
+                <outlet property="m_dealBtn" destination="8gl-Rb-Yuq" id="thk-3f-7fO"/>
+                <outlet property="m_disagreeBtn" destination="47B-S0-p5p" id="apn-ap-P1k"/>
+            </connections>
+            <point key="canvasLocation" x="941.5" y="371"/>
+        </tableViewCell>
+    </objects>
+</document>
