@@ -46,13 +46,13 @@
 {
     self.m_commentModel = [[HotCommentM alloc]init];
     self.m_commentModel.m_userNmae = @"哈哈哈哈";
-    self.m_commentModel.m_commentsContent = @"撒了发牢骚解放啦看似简单弗兰克就阿斯利康的房间拉是宽度附近沙龙的看法就阿斯利康的放假啊顺路快递发就阿斯利康的解放路开始就发了卡死机发了卡死机发流口水就弗兰克撒娇发了卡萨丁就发了卡萨丁就发卡量圣诞节发了卡死机发抗裂砂浆多路阀发卡量圣诞节发拉是宽度附近上课了点击发送考虑到房间里的苦咖啡来得及弗兰克记录卡结束啦扩所付军绿扩扩军军军奥绿扩军军军军军军军军军绿军扩军绿绿扩扩扩扩扩扩扩扩扩扩扩卡绿绿所扩付军所绿付扩军所上放了扩付付绿绿绿绿绿绿绿绿绿绿扩军绿绿绿绿绿绿绿绿绿绿扩扩所绿";
+    self.m_commentModel.m_commentsContent = @"撒了发牢骚解放啦看似简单弗兰克就阿斯利康的房间拉是宽度附近沙龙的看法就阿斯利康的放假啊顺路快递发就阿斯利康的解放路开始就发了卡死机发了卡死机发流口水就弗兰克撒娇发了卡萨丁就发了卡萨丁就发卡量圣诞节发了卡死机发抗裂砂浆多路阀发卡量圣诞节发拉是宽度附近上课了点击发送考虑到房间里的苦咖啡来得及弗兰克记录卡结束啦扩所付军绿扩扩军军军奥绿扩军军军军军军军军军绿军扩军绿绿扩扩扩扩扩扩扩扩扩扩扩卡绿绿所扩付军所绿付扩军所上放了扩付付绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿扩军绿绿绿绿绿绿绿绿绿绿扩扩所绿";
     self.m_commentModel.m_ThumbUpCount = @"11";
     self.m_commentModel.m_CommentTime = @"1个小时前";
     self.m_commentModel.m_userPhoto = @"http://image.baidu.com/search/down?tn=download&word=download&ie=utf8&fr=detail&url=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F22%2F72%2F62%2F57c7ad7ba739a_1024.jpg&thumburl=http%3A%2F%2Fimg3.imgtn.bdimg.com%2Fit%2Fu%3D4153768048%2C2702237%26fm%3D26%26gp%3D0.jpg";
     self.m_commentModel.m_commentsImage = @"http://img2.imgtn.bdimg.com/it/u=928861582,28679776&fm=26&gp=0.jpg";
     self.m_commentModel.m_moviewName = @"新木乃伊";
-    self.m_commentModel.m_moviewData = @"名字名字、名字名字、名字名字、名字名字、名字名字、名字名字、";
+    self.m_commentModel.m_moviewData = @"名字名字、名字名字、名字名字、名字名字、名字名字、名字名字、绿绿绿绿绿绿绿绿绿绿";
     self.m_commentModel.m_moviewImage = @"https://image.baidu.com/search/down?tn=download&word=download&ie=utf8&fr=detail&url=https%3A%2F%2Ftimgsa.baidu.com%2Ftimg%3Fimage%26quality%3D80%26size%3Db9999_10000%26sec%3D1498627759377%26di%3Dbf00bcceaa55c4cddf0f5ef173e8412a%26imgtype%3D0%26src%3Dhttp%253A%252F%252Fwww.hntqb.com%252Fresfile%252F2017-06-09%252FA22%252F357200_wangf_1496923689532_b.jpg&thumburl=https%3A%2F%2Fss1.bdstatic.com%2F70cFvXSh_Q1YnxGkpoWK1HF6hhy%2Fit%2Fu%3D118306726%2C726359955%26fm%3D11%26gp%3D0.jpg";
     
 }
